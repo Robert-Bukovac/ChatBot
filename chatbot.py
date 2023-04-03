@@ -1,7 +1,7 @@
 import openai
 import gradio
 
-openai.api_key = "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"
+openai.api_key = "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"
 
 messages = [{"role": "system", "content": "You are a financial experts that specializes in real estate investment and negotiation"}]
 
@@ -17,4 +17,4 @@ def CustomChatGPT(user_input):
 
 demo = gradio.Interface(fn=CustomChatGPT, inputs = "text", outputs = "text", title = "Real Estate Pro")
 
-demo.launch(share=True)
+demo.launch(share=False)
